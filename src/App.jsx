@@ -1,5 +1,5 @@
 import React from 'react';
-import Layouts from '../components/global/Layouts';
+import Layouts from './components/global/Layouts';
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../routes/App.css';
+import '../../styles/index.css';
 import PropTypes from 'prop-types';
 
 function Layouts({ children }) {
