@@ -1,18 +1,17 @@
 import React from 'react';
+import style from '../../styles/module-css/Footer.module.css';
 
 function Footer() {
   return (
     <footer>
-      <div className="footer-content">
-        <p className="footer-title">Eat, Cook, Repeat</p>
-        <p className="footer-sub-title">
-          Share your best recipe by uploading here !
-        </p>
-        <div className="footer-menu">
+      <div className={style.footer}>
+        <h1>Eat, Cook, Repeat</h1>
+        <p>Share your best recipe by uploading it here!</p>
+        <div>
           <span>Product</span>
           <span>Company</span>
           <span>Learn More</span>
-          <span>Get In Touch</span>
+          <span>Get in touch</span>
         </div>
       </div>
     </footer>

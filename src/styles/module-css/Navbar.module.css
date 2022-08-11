@@ -1,0 +1,18 @@
+.navbar{
+    position: absolute;
+    width: 100%;
+}
+
+.navbar a{
+    color: #2E266F;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.navbar a:hover{
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}

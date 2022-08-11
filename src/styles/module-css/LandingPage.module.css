@@ -1,0 +1,134 @@
+.sectionOne{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div.leftContent, div.rightContent{
+    width: 50vw;
+    max-width: 50vw;
+}
+
+div.leftContent{
+    display: flex;
+    flex-direction: column;
+    padding: 0 3% 0 7%;
+}
+
+div.leftContent span{
+    font-size: 72px;
+    color: #2E266F;
+}
+
+div.leftContent input{
+    margin-top: 1rem;
+    width: 98%;
+    height: 7vh;
+    border: 0;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+div.leftContent input:focus{
+    outline-color: #EFC81A;
+}
+
+div.rightContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 2%;
+    min-height: inherit;
+}
+
+div.rightContent .leftSide, div.rightContent .rightSide{
+    width: 50%;
+}
+
+div.rightContent .leftSide{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 8%;
+}
+
+div.rightContent .leftSide img{
+    margin: 3% 0 3% 0;
+    width: 100%;
+}
+
+div.rightContent div.rightSide{
+    width: 100%;
+    background-color: #EFC81A;
+    height: 125vh;
+}
+
+/* div.rightContent .mainFoodBg{
+    position: absolute;
+    margin-bottom: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.rightContent .mainFoodBg img{
+    height: 100%;
+    width: 100%;
+} */
+
+div.rightContent .mainFood{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.rightContent .mainFood img{
+    height: 100%;
+    width: 100%;
+}
+
+/* Phone breakpoints */
+@media only screen and (max-width: 575px) {
+
+    div.leftContent span {
+        font-size: 32px;
+        text-align: center !important;
+    }
+}
+
+/* Tablet breakpoints */
+@media only screen and ((min-width: 576px) and (max-width: 1024px)) {
+    div.leftContent span {
+        font-size: 39px;
+    }
+}
+
+/* Laptop breakpoints */
+@media only screen and ((min-width: 1025px) and (max-width: 1440px)) {
+    div.leftContent span {
+        font-size: 52px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    div.rightContent{
+        display: none;
+    }
+
+    div.leftContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 100vw;
+        max-width: 100vw;
+    }
+
+    div.leftContent input{
+        width: 80%;
+    }
+}
