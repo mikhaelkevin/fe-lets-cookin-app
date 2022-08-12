@@ -91,12 +91,80 @@ div.rightContent .mainFood img{
     width: 100%;
 }
 
+.sectionPageSize{
+    min-height: inherit;
+    width: 100%;
+}
+
+.sectionPageSize .sectionTitle{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 7%;
+    margin-top: 1vh;
+}
+
+.sectionTitle span{
+    font-size: 46px;
+    color: #2E266F;
+    margin-left: 2%;
+}
+
+.sectionTitle .titleLine{
+    width: 1.5%;
+    height: 12vh;
+    background-color: #EFC81A;
+}
+
+.sectionPageSize .popularSection{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+.popularSection .popularCard{
+    width: 35vw;
+    height: 60vh;
+    margin-right: 2vw;
+    border-radius: 15px;
+    padding: 2%;
+    display: flex;
+}
+
+.popularSection .popularCard span{
+    font-size: 34px;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+    margin-top: auto;
+}
+
+/* MEDIA QUERIES BREAKPOINTS */
 /* Phone breakpoints */
 @media only screen and (max-width: 575px) {
 
     div.leftContent span {
         font-size: 32px;
         text-align: center !important;
+    }
+
+    .sectionTitle span {
+        font-size: 20px;
+    }
+
+    .sectionTitle .titleLine {
+        height: 6vh;
+    }
+
+    .popularSection {
+        align-items: center !important;
+        flex-direction: column !important;
+    }
+
+    .popularSection .popularCard {
+        width: 85vw;
+        height: 35vh;
+        margin: 1vh !important;
     }
 }
 
@@ -105,6 +173,29 @@ div.rightContent .mainFood img{
     div.leftContent span {
         font-size: 39px;
     }
+
+    .sectionPageSize {
+        min-height: 60vh !important;
+    }
+
+    .sectionTitle .titleLine {
+        height: 7vh;
+    }
+
+    .sectionTitle span {
+        font-size: 26px;
+    }
+
+    .popularSection {
+        justify-content: center !important;
+    }
+
+    .popularSection .popularCard {
+        width: 50vw;
+        height: 35vh;
+        margin: 0 2vw;
+    }
+
 }
 
 /* Laptop breakpoints */
@@ -112,6 +203,19 @@ div.rightContent .mainFood img{
     div.leftContent span {
         font-size: 52px;
     }
+
+    .sectionTitle .titleLine {
+            height: 12vh;
+    }
+
+    .sectionTitle span {
+        font-size: 32px;
+    }
+
+    .popularSection .popularCard span {
+        font-size: 26px;
+    }
+
 }
 
 @media only screen and (max-width: 767px){
