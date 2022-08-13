@@ -66,19 +66,6 @@ div.rightContent div.rightSide{
     height: 125vh;
 }
 
-/* div.rightContent .mainFoodBg{
-    position: absolute;
-    margin-bottom: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-div.rightContent .mainFoodBg img{
-    height: 100%;
-    width: 100%;
-} */
-
 div.rightContent .mainFood{
     position: absolute;
     display: flex;
@@ -190,6 +177,40 @@ div.rightContent .mainFood img{
     width: 25%;
 }
 
+.sectionPageSize .recipeListContent{
+    margin: 5%;
+}
+
+.sectionPageSize .recipeListContent div{
+    background-color: transparent;
+    border: 0;
+}
+
+.sectionPageSize .recipeListContent .cardCustomHeight{
+    height: 50vh !important;
+}
+
+.sectionPageSize .recipeListContent img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.sectionPageSize .recipeListContent span{
+    max-width: 95%;
+    max-height: 90%;
+    position: absolute;
+    bottom: 0;
+    padding: 5%;
+    font-size: 38px;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+}
+
 /* MEDIA QUERIES BREAKPOINTS */
 /* Phone breakpoints */
 @media only screen and (max-width: 575px) {
@@ -205,7 +226,7 @@ div.rightContent .mainFood img{
     }
 
     .sectionTitle span {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .sectionTitle .titleLine {
@@ -224,7 +245,7 @@ div.rightContent .mainFood img{
     }
 
     .popularSection .popularCard span {
-        font-size: 28px;
+        font-size: 23px;
     }
 
     .newRecipeSection .leftSide .leftBackground {
@@ -236,13 +257,20 @@ div.rightContent .mainFood img{
     }
 
     .newRecipeSection .rightSide span {
-        font-size: 22px;
+        font-size: 23px;
     }
 
     .newRecipeSection .rightSide {
         padding: 0;
     }
 
+    .sectionPageSize .recipeListContent .cardCustomHeight {
+        height: 33vh !important;
+    }
+
+    .sectionPageSize .recipeListContent span {
+        font-size: 23px;
+    }
     
 }
 
@@ -261,11 +289,15 @@ div.rightContent .mainFood img{
     }
 
     .sectionTitle span {
-        font-size: 26px;
+        font-size: 33px;
     }
 
     .popularSection {
         justify-content: center !important;
+    }
+
+    .popularSection .popularCard span {
+        font-size: 30px;
     }
 
     .popularSection .popularCard {
@@ -283,7 +315,15 @@ div.rightContent .mainFood img{
     }
 
     .newRecipeSection .rightSide span {
-        font-size: 34px;
+        font-size: 30px;
+    }
+
+    .sectionPageSize .recipeListContent .cardCustomHeight {
+        height: 38vh !important;
+    }
+
+    .sectionPageSize .recipeListContent span {
+        font-size: 30px;
     }
 
 }
@@ -308,6 +348,14 @@ div.rightContent .mainFood img{
 
     .newRecipeSection .rightSide span {
         font-size: 40px;
+    }
+
+    .sectionPageSize .recipeListContent .cardCustomHeight {
+        height: 50vh !important;
+    }
+
+    .sectionPageSize .recipeListContent span {
+        font-size: 28px;
     }
 
 }
