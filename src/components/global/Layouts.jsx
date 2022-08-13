@@ -11,10 +11,9 @@ function Layouts({ children }) {
 }
 
 Layouts.propTypes = {
-  children: PropTypes.elementType,
+  children: PropTypes.arrayOf(
+    PropTypes.element.isRequired,
+  ).isRequired,
 };
 
-Layouts.defaultProps = {
-  children: null,
-};
 export default Layouts;
