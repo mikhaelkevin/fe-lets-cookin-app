@@ -139,9 +139,65 @@ div.rightContent .mainFood img{
     margin-top: auto;
 }
 
+
+.sectionPageSize .newRecipeSection{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    min-height: inherit;
+}
+
+.newRecipeSection .leftSide{
+    width: 50%;
+}
+
+.newRecipeSection .leftSide .leftBackground{
+    width: 50%;
+    height: 70%;
+    padding-top: 6%;
+    padding-left: 10%;
+    background-color: #EFC81A;
+}
+
+.leftSide .leftBackground img{
+    position: absolute;
+    object-fit: cover;
+    width: 35%;
+    height: 70%;
+    border-radius: 15px;
+}
+
+.newRecipeSection .rightSide{
+    color: #2E266F;
+    width: 50%;
+    min-height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10%;
+}
+
+.newRecipeSection .rightSide .content{
+    height: 70%;
+}
+
+.newRecipeSection .rightSide span{
+    font-size: 54px;
+}
+
+.newRecipeSection .rightSide hr{
+    width: 25%;
+}
+
 /* MEDIA QUERIES BREAKPOINTS */
 /* Phone breakpoints */
 @media only screen and (max-width: 575px) {
+
+    .sectionPageSize {
+        min-height: 50vh;
+        margin-bottom: 10%;
+    }
 
     div.leftContent span {
         font-size: 32px;
@@ -166,6 +222,28 @@ div.rightContent .mainFood img{
         height: 35vh;
         margin: 1vh !important;
     }
+
+    .popularSection .popularCard span {
+        font-size: 28px;
+    }
+
+    .newRecipeSection .leftSide .leftBackground {
+        height: 80%;
+    }
+
+    .leftSide .leftBackground img {
+        height: 42%;
+    }
+
+    .newRecipeSection .rightSide span {
+        font-size: 22px;
+    }
+
+    .newRecipeSection .rightSide {
+        padding: 0;
+    }
+
+    
 }
 
 /* Tablet breakpoints */
@@ -175,7 +253,7 @@ div.rightContent .mainFood img{
     }
 
     .sectionPageSize {
-        min-height: 60vh !important;
+        min-height:50vh;
     }
 
     .sectionTitle .titleLine {
@@ -194,6 +272,18 @@ div.rightContent .mainFood img{
         width: 50vw;
         height: 35vh;
         margin: 0 2vw;
+    }
+    
+    .newRecipeSection .leftSide .leftBackground {
+        height: 80%;
+    }
+
+    .leftSide .leftBackground img {
+        height: 40%;
+    }
+
+    .newRecipeSection .rightSide span {
+        font-size: 34px;
     }
 
 }
@@ -214,6 +304,10 @@ div.rightContent .mainFood img{
 
     .popularSection .popularCard span {
         font-size: 26px;
+    }
+
+    .newRecipeSection .rightSide span {
+        font-size: 40px;
     }
 
 }
