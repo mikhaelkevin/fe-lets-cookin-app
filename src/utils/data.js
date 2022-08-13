@@ -12,4 +12,13 @@ const recipeDummy = [
   },
 ];
 
-module.exports = { recipeDummy };
+// New recipe dummy data
+const newRecipeDummy = [
+  {
+    id: 3,
+    title: 'Healthy Bone Broth Ramen',
+    image: '/images/bone-broth.svg',
+  },
+];
+
+module.exports = { recipeDummy, newRecipeDummy };
