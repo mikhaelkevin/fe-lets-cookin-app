@@ -20,7 +20,6 @@ function PopularCard({ data }) {
 
 PopularCard.propTypes = {
   data: PropTypes.shape({
-    id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
   }).isRequired,
