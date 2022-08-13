@@ -7,7 +7,13 @@ function PopularCards() {
   return (
     <div className={style.popularSection}>
       {recipeDummy?.map((item) => (
-        <PopularCard data={item} key={item.id} />
+        <PopularCard
+          data={{
+            title: item?.title,
+            image: item?.image || '/images/broken-image.png',
+          }}
+          key={item.id}
+        />
       ))}
     </div>
   );

@@ -3,12 +3,12 @@ const recipeDummy = [
   {
     id: 1,
     title: 'Pizza Lamoa',
-    image: '/images/pizza.svg',
+    image: '/images/temp/pizza.svg',
   },
   {
     id: 2,
     title: 'King Burger',
-    image: '/images/burger.svg',
+    image: '/images/temp/burger.svg',
   },
 ];
 
@@ -17,7 +17,7 @@ const newRecipeDummy = [
   {
     id: 3,
     title: 'Healthy Bone Broth Ramen',
-    image: '/images/bone-broth.svg',
+    image: '/images/temp/bone-broth.svg',
   },
 ];
 
