@@ -126,7 +126,6 @@ div.rightContent .mainFood img{
     margin-top: auto;
 }
 
-
 .sectionPageSize .newRecipeSection{
     display: flex;
     flex-direction: row;
@@ -178,7 +177,7 @@ div.rightContent .mainFood img{
 }
 
 .sectionPageSize .recipeListContent{
-    margin: 5%;
+    margin: 5% 5% 0 5% ;
 }
 
 .sectionPageSize .recipeListContent div{
