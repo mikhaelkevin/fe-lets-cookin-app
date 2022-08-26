@@ -6,6 +6,11 @@
   font-family: "Air BNB Cereal" !important;
 }
 
+button.active{
+  background-color: #EFC81A !important;
+  border-color: transparent !important;
+}
+
 /* Navbar Style */
 @media only screen and (min-width: 768px){
   .nav-auth-item a{
