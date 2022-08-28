@@ -55,4 +55,45 @@ const recipeListDummy = [
   },
 ];
 
-module.exports = { recipeDummy, newRecipeDummy, recipeListDummy };
+// Detail recipe dummy
+
+const detailRecipeDummy = {
+  id: 10,
+  title: 'Sandwich',
+  image: '/images/temp/sandwich.svg',
+  ingredients: [
+    '2 Eggs',
+    '2 Tbsp Mayonnaise',
+    '3 Slices bread',
+    'A little butter',
+    '1/3 Carton of chess',
+    '2-3 Slices of tomato or a lettuce leaf and a slice of ham or cheese',
+    'Crisp, to serve',
+  ],
+  videos: [
+    'https://www.youtube.com/watch?v=Bo-_6SWkMoE',
+    'https://www.youtube.com/watch?v=8NnQs3EtoqU',
+    'https://www.youtube.com/watch?v=VyPwEZTIpVc',
+  ],
+};
+
+const commentUserDummy = [
+  {
+    username: 'Mikhael Kevin',
+    comment: 'Nice recipe. Simple and delicious, thankyou!',
+    image: '/images/temp/test.jpg',
+  },
+  {
+    username: 'Anya Geraldine',
+    comment: 'Nice recipe. Simple and delicious, thankyou!',
+    image: '/images/temp/anya.png',
+  },
+];
+
+module.exports = {
+  recipeDummy,
+  newRecipeDummy,
+  recipeListDummy,
+  detailRecipeDummy,
+  commentUserDummy,
+};

@@ -1,9 +1,12 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import style from '../../styles/module-css/Navbar.module.css';
 
 function Navbar() {
+  const { pathname } = useLocation();
+
   return (
-    <div className={style.navbar}>
+    <div className={style.navbar} style={pathname === '/' ? { position: 'absolute' } : { position: 'relative' }}>
       <div className="row d-flex justify-content-center pt-lg-5 pt-md-5 m-0">
         <div className="col-md-2 col-12 text-center">
           <a href="/">Home</a>
