@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
-// import numberToWords from 'number-to-words';
-import style from '../styles/module-css/DetailResep.module.css';
 import { detailRecipeDummy, commentUserDummy } from '../utils/data';
+import style from '../styles/module-css/DetailResep.module.css';
+// import numberToWords from 'number-to-words';
 
-function DetailResep() {
+function DetailRecipe() {
+  const a = 2;
+
   useEffect(() => {
     document.title = 'Detail Resep';
   }, []);
-
-  const a = 2;
 
   return (
     <>
@@ -17,18 +17,19 @@ function DetailResep() {
           <div className="card-header">
             <p>{detailRecipeDummy?.title}</p>
           </div>
-          <div className="card-body">
-            <div className="position-absolute bottom-0 end-0 mb-3 me-md-2 me-3 ">
-              <button type="submit" className={`btn mx-2 bg-light ${a === 1 ? null : 'active'}`}>Like</button>
-              <button type="submit" className="btn btn-light mx-2">Save</button>
-            </div>
-            <img src={detailRecipeDummy?.image} alt={detailRecipeDummy?.title} />
+          <div className="position-absolute bottom-0 end-0 mb-3 me-md-2 me-3 ">
+            <button type="submit" className={`btn mx-2 bg-light ${a === 1 ? null : 'active'}`}>Like</button>
+            <button type="submit" className="btn btn-light mx-2">Save</button>
           </div>
+          <img src={detailRecipeDummy?.image} alt={detailRecipeDummy?.title} />
         </div>
       </div>
       <div className={style.detailResepDescription}>
         <h1>Ingredients</h1>
-        {detailRecipeDummy?.ingredients?.map((item) => (<p key={item}>{`- ${item}`}</p>))}
+        {detailRecipeDummy?.ingredients.map((item, index) => {
+          const ingredientKey = index + 1;
+          return <p key={ingredientKey}>{`- ${item}`}</p>;
+        })}
         <h1>Video Step</h1>
         {detailRecipeDummy?.videos?.map((item) => (
           <div
@@ -74,4 +75,4 @@ function DetailResep() {
   );
 }
 
-export default DetailResep;
+export default DetailRecipe;
