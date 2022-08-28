@@ -1,14 +1,18 @@
+import pizza from '../assets/images/temp/pizza.svg';
+import burger from '../assets/images/temp/burger.svg';
+import boneBroth from '../assets/images/temp/bone-broth.svg';
 // Popular recipe dummy data
+
 const recipeDummy = [
   {
     id: 1,
     title: 'Pizza Lamoa',
-    image: '/images/temp/pizza.svg',
+    image: pizza,
   },
   {
     id: 2,
     title: 'King Burger',
-    image: '/images/temp/burger.svg',
+    image: burger,
   },
 ];
 
@@ -17,7 +21,7 @@ const newRecipeDummy = [
   {
     id: 3,
     title: 'Healthy Bone Broth Ramen',
-    image: '/images/temp/bone-broth.svg',
+    image: boneBroth,
   },
 ];
 
@@ -90,7 +94,7 @@ const commentUserDummy = [
   },
 ];
 
-module.exports = {
+export {
   recipeDummy,
   newRecipeDummy,
   recipeListDummy,
