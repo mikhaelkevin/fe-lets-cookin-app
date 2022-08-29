@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import style from '../styles/module-css/DetailResep.module.css';
+import { detailRecipeDummy } from '../utils/data';
+
 import HeadContent from '../components/organism/detail-recipe/HeadContent';
 import DescriptionContent from '../components/organism/detail-recipe/DescriptionContent';
 import CommentList from '../components/moleculs/detail-recipe/CommentList';
@@ -14,10 +16,14 @@ function DetailRecipe() {
   return (
     <>
       <div className={style.detailResepContent}>
-        <HeadContent />
+        <HeadContent data={{ image: detailRecipeDummy?.image, title: detailRecipeDummy?.title }} />
       </div>
       <div className={style.detailResepDescription}>
-        <DescriptionContent />
+        <DescriptionContent data={{
+          ingredients: detailRecipeDummy?.ingredients,
+          videos: detailRecipeDummy?.videos,
+        }}
+        />
       </div>
       <div className={style.commentForm}>
         <CommentForm />

@@ -1,31 +1,30 @@
 import React from 'react';
-import Image from '../../global/Image';
-import { detailRecipeDummy } from '../../../utils/data';
-import playButton from '../../../assets/icons/play-icon.svg';
+import PropTypes from 'prop-types';
 
-function DescriptionContent() {
+import Ingredients from '../../moleculs/detail-recipe/Ingredients';
+import StepVideos from '../../moleculs/detail-recipe/StepVideos';
+
+function DescriptionContent({ data: { ingredients, videos } }) {
   return (
     <>
-      <h1>Ingredients</h1>
-      {detailRecipeDummy?.ingredients.map((item, index) => {
-        const ingredientKey = index + 1;
-        return <p key={ingredientKey}>{`- ${item}`}</p>;
-      })}
-      <h1>Video Step</h1>
-      {detailRecipeDummy?.videos?.map((item) => (
-        <div
-          className="btn btn-warning btn-lg"
-          onClick={() => window.open(item)}
-          onKeyUp={() => window.open(item)}
-          role="button"
-          tabIndex={0}
-          key={item}
-        >
-          <Image data={{ image: playButton, title: 'play-icon' }} />
-        </div>
-      ))}
+      <Ingredients data={{ ingredients }} />
+      <StepVideos data={{ videos }} />
     </>
   );
 }
+
+DescriptionContent.propTypes = {
+  data: PropTypes.shape({
+    ingredients: PropTypes.arrayOf(PropTypes.string),
+    videos: PropTypes.arrayOf(PropTypes.string),
+  }),
+};
+
+DescriptionContent.defaultProps = {
+  data: {
+    ingredients: ['No ingredients added.'],
+    videos: ['#'],
+  },
+};
 
 export default DescriptionContent;
