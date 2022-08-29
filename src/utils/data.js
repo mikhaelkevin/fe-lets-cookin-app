@@ -1,6 +1,9 @@
 import pizza from '../assets/images/temp/pizza.svg';
 import burger from '../assets/images/temp/burger.svg';
 import boneBroth from '../assets/images/temp/bone-broth.svg';
+import chickenKare from '../assets/images/temp/list-1.svg';
+import sandwich from '../assets/images/temp/sandwich.svg';
+import anya from '../assets/images/temp/anya.png';
 // Popular recipe dummy data
 
 const recipeDummy = [
@@ -30,7 +33,7 @@ const recipeListDummy = [
   {
     id: 4,
     title: 'Chicken Kare',
-    image: '/images/temp/list-1.svg',
+    image: chickenKare,
   },
   {
     id: 5,
@@ -64,7 +67,7 @@ const recipeListDummy = [
 const detailRecipeDummy = {
   id: 10,
   title: 'Sandwich',
-  image: '/images/temp/sandwich.svg',
+  image: sandwich,
   ingredients: [
     '2 Eggs',
     '2 Tbsp Mayonnaise',
@@ -90,7 +93,7 @@ const commentUserDummy = [
   {
     username: 'Anya Geraldine',
     comment: 'Nice recipe. Simple and delicious, thankyou!',
-    image: '/images/temp/anya.png',
+    image: anya,
   },
 ];
 
