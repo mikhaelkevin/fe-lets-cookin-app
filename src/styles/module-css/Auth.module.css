@@ -1,0 +1,28 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    font-family: "Inter" !important;
+}
+
+.leftPage{
+    width: 49%;
+    height: 100%;
+    background-color: #EFC81A;
+}
+
+.leftPage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 50%;
+    z-index: 1;
+}
+
+.rightPage{
+    width: 50%;
+    height: 100%;
+    background-color: #FFF5EC;
+}
