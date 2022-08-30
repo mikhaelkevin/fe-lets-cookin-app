@@ -1,28 +1,155 @@
 .container{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: inherit;
     max-width: 100vw;
-    max-height: 100vh;
     display: flex;
-    font-family: "Inter" !important;
+    font-family: "Inter";
+    overflow-x: hidden !important;
 }
 
 .leftPage{
-    width: 49%;
-    height: 100%;
+    width: 50%;
+    height: inherit;
     background-color: #EFC81A;
+    
+}
+
+.leftPage .logo{
+    width: inherit;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.logo img{
+    width: 30% !important;
+    height: 30% !important;
+    opacity: 100% !important;
+}
+
+.logo h2{
+    font-weight: 1000;
+    color: white;
 }
 
 .leftPage img{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
+    object-position: center;
     opacity: 50%;
-    z-index: 1;
 }
 
 .rightPage{
     width: 50%;
-    height: 100%;
     background-color: #FFF5EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rightPage .title h2{
+    color: #EFC81A;
+    font-weight: 1000;
+    margin-bottom: 2rem;
+}
+
+.rightPage .title span{
+    color: #8692A6;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.rightPage .authForm, 
+.rightPage .authFeature, 
+.rightPage hr{
+    width: 50%;
+}
+
+.rightPage .authForm form label{
+    font-size: 18px;
+    width: 100%;
+}
+
+.rightPage .authForm form input:focus{
+    outline: none;
+    border:1px solid #EFC81A;
+    box-shadow: 0 0 10px aqua;
+}
+
+.rightPage .authForm form button{
+    width: 100%;
+}
+
+.rightPage .authFeature p{
+    color: #8692A6;
+}
+
+.rightPage .authFeature a{
+    color: #EFC81A;
+    text-decoration: none;
+}
+
+/* MEDIA QUERIES BREAKPOINTS */
+/* Phone breakpoints */
+@media only screen and (max-width: 575px) {
+    .rightPage .authForm,
+    .rightPage .authFeature,
+    .rightPage hr{
+    width: 90% !important;
+    }
+
+    .rightPage .authForm input, 
+    .rightPage .authForm label, 
+    .rightPage .title span, 
+    .rightPage .authFeature {
+        font-size: 15px !important;
+    }
+
+    .rightPage {
+        padding: 1rem 0;
+    }
+
+    .rightPage .title h2{
+        margin-bottom: 1rem;
+    }
+    
+}
+
+
+/* Laptop breakpoints */
+@media only screen and ((min-width: 1025px) and (max-width: 1440px)) {
+    .rightPage .title h2 {
+        font-size: 26px;
+        margin-bottom: 1rem;
+    }
+
+    .rightPage .authForm input,
+    .rightPage .authFeature p,
+    .rightPage button,
+    .rightPage .title span {
+        font-size: 15px !important;
+    }
+
+    .rightPage .authForm label{
+        font-size: 15px !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+
+@media only screen and ((max-width: 1024px)) {
+    .leftPage{
+        display: none;
+    }
+
+    .rightPage{
+        width: 100%;
+    }
 }
