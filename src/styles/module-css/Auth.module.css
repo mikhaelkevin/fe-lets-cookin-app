@@ -113,10 +113,11 @@
     }
 
     .rightPage {
-        padding-top: 1rem;
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .rightPage .title h2{
+        margin-bottom: 1rem;
     }
     
 }
