@@ -36,8 +36,10 @@ function NewRecipe() {
   ));
 
   useEffect(
-    () => () => files.forEach((file) => URL.revokeObjectURL(file.preview)),
-    document.title = 'Add Recipe',
+    () => {
+      files.forEach((file) => URL.revokeObjectURL(file.preview));
+      document.title = 'Add Recipe';
+    },
     [],
   );
 
@@ -52,7 +54,7 @@ function NewRecipe() {
           ) : (
             <div {...getRootProps({ className: 'dropzone' })}>
               <input {...getInputProps()} />
-              <span>Drag and drop, or click to select files and set your recipe picture</span>
+              <span className="text-center">Drag and drop, or click to select files and set your recipe picture</span>
             </div>
           )}
         </div>
