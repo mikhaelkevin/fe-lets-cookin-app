@@ -12,6 +12,8 @@ import LandingPage from './pages/LandingPage';
 import DetailRecipe from './pages/Recipe/DetailRecipe';
 import NewRecipe from './pages/Recipe/NewRecipe';
 
+import Profile from './pages/User/Profile';
+
 function App() {
   return (
     <BrowserRouter>
@@ -24,6 +26,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/detail" element={<DetailRecipe />} />
           <Route path="/new" element={<NewRecipe />} />
+          <Route path="/profile" element={<Profile />} />
         </Route>
       </Routes>
     </BrowserRouter>

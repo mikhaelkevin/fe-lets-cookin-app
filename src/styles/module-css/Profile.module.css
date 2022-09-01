@@ -1,0 +1,94 @@
+.container {
+    width: 100%;
+    min-height: 0;
+    padding: 3rem 0;
+}
+
+.userProfile{
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.userProfile img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+
+.userFeature{
+    min-height: 50vh;
+    padding: 1rem;
+}
+
+.userFeature ul>li{
+    font-size: 1.25rem;
+    margin-right: 3rem;
+}
+
+.userFeature ul>li button{
+    color: #666666;
+}
+
+.userFeature ul>li button:hover{
+    color: #EFC81A;
+}
+
+.userFeature .featureItemCard{
+    height: 25vh;
+}
+.userFeature .featureItemCard span{
+    max-width: 95%;
+    max-height: 90%;
+    position: absolute;
+    bottom: 0;
+    padding: 5%;
+    font-size: 1.25rem;
+    color: white;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+}
+
+.userFeature .featureItemCard img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* MEDIA QUERIES BREAKPOINTS */
+/* Phone breakpoints */
+@media only screen and (max-width: 575px) {
+
+    .container{
+        padding: 1rem;
+    }
+
+    .userProfile img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .userProfile a{
+        font-size: 1.1rem;
+    }
+
+    .userFeature ul{
+        display: flex;
+        justify-content: space-evenly !important;
+    }
+
+    .userFeature ul>li {
+        font-size: 1rem;
+        margin-right: 0;
+    }
+}
