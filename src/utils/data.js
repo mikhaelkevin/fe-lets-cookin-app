@@ -3,6 +3,7 @@ import burger from '../assets/images/temp/burger.svg';
 import boneBroth from '../assets/images/temp/bone-broth.svg';
 import chickenKare from '../assets/images/temp/list-1.svg';
 import sandwich from '../assets/images/temp/sandwich.svg';
+import bombChicken from '../assets/images/temp/list-2.svg';
 import anya from '../assets/images/temp/anya.png';
 // Popular recipe dummy data
 
@@ -38,7 +39,7 @@ const recipeListDummy = [
   {
     id: 5,
     title: 'Bomb Chicken',
-    image: '/images/temp/list-2.svg',
+    image: bombChicken,
   },
   {
     id: 6,
@@ -97,10 +98,17 @@ const commentUserDummy = [
   },
 ];
 
+const myRecipeDummy = [...recipeListDummy];
+const savedRecipeDummy = [recipeListDummy?.[2], recipeListDummy?.[3]];
+const likedRecipeDummy = [recipeListDummy?.[3], recipeListDummy?.[4]];
+
 export {
   recipeDummy,
   newRecipeDummy,
   recipeListDummy,
   detailRecipeDummy,
   commentUserDummy,
+  myRecipeDummy,
+  savedRecipeDummy,
+  likedRecipeDummy,
 };

@@ -13,7 +13,7 @@ function Navbar() {
         {token && (
           <>
             <div className="col-md-2 col-12 text-center">
-              <NavLink exact to="/">Home</NavLink>
+              <NavLink to="/">Home</NavLink>
             </div>
             <div className="col-md-2 col-12 text-center">
               <NavLink to="/new">Add Recipe</NavLink>
