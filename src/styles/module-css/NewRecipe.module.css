@@ -83,6 +83,12 @@
     .container form .dropzone {
         margin-bottom: 0.50rem;
     }
+
+    .container form .dropzone span,
+    .container form input,
+    .container form textarea {
+        font-size: 1rem;
+    }
 }
 
 /* Tablet breakpoints */
