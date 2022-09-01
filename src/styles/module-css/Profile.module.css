@@ -45,7 +45,7 @@
     height: 25vh;
 }
 .userFeature .featureItemCard span{
-    max-width: 95%;
+    max-width: 70%;
     max-height: 90%;
     position: absolute;
     bottom: 0;
@@ -90,5 +90,9 @@
     .userFeature ul>li {
         font-size: 1rem;
         margin-right: 0;
+    }
+
+    .userFeature .featureItemCard span {
+        font-size: 1rem;
     }
 }
