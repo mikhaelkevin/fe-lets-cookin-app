@@ -1,6 +1,7 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { RiDeleteBin2Line, RiEdit2Line } from 'react-icons/ri';
 import style from '../../styles/module-css/Profile.module.css';
 
 import Image from '../../components/global/Image';
@@ -42,10 +43,28 @@ function Profile() {
           <div className="tab-pane fade show active" id="my-recipe" role="tabpanel" aria-labelledby="my-recipe-tab">
             <div className="row">
               {myRecipeDummy?.map((item) => (
-                <div className="col-lg-3 col-md-6 col-12 mb-4 ">
+                <div className="col-lg-3 col-md-6 col-12 mb-4" key={item?.id}>
                   <div className={style.featureItemCard}>
                     <div className="card h-100 w-100 bg-transparent border-0">
-                      <span className="position-absolute bottom-0 p-3">{item?.title}</span>
+                      <div className="row position-absolute p-2 w-100 h-100">
+                        <div className="col-8">
+                          <span>{item?.title}</span>
+                        </div>
+                        <div className="col-4 d-flex justify-content-end">
+                          <div className="row">
+                            <div className="col-6">
+                              <button type="button" className="btn btn btn-warning">
+                                <RiEdit2Line />
+                              </button>
+                            </div>
+                            <div className="col-6">
+                              <button type="button" className="btn btn btn-danger">
+                                <RiDeleteBin2Line />
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                       <Image data={{ image: item?.image, title: item?.title }} />
                     </div>
                   </div>
@@ -56,7 +75,7 @@ function Profile() {
           <div className="tab-pane fade" id="saved-recipe" role="tabpanel" aria-labelledby="saved-recipe-tab">
             <div className="row">
               {savedRecipeDummy?.map((item) => (
-                <div className="col-lg-3 col-md-6 col-12 mb-4 ">
+                <div className="col-lg-3 col-md-6 col-12 mb-4" key={item?.id}>
                   <div className={style.featureItemCard}>
                     <div className="card h-100 w-100 bg-transparent border-0">
                       <span className="position-absolute bottom-0 p-3">{item?.title}</span>
@@ -70,7 +89,7 @@ function Profile() {
           <div className="tab-pane fade" id="liked-recipe" role="tabpanel" aria-labelledby="liked-recipe-tab">
             <div className="row">
               {likedRecipeDummy?.map((item) => (
-                <div className="col-lg-3 col-md-6 col-12 mb-4 ">
+                <div className="col-lg-3 col-md-6 col-12 mb-4" key={item?.id}>
                   <div className={style.featureItemCard}>
                     <div className="card h-100 w-100 bg-transparent border-0">
                       <span className="position-absolute bottom-0 p-3">{item?.title}</span>

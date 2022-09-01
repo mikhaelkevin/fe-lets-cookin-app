@@ -43,7 +43,7 @@ const recipeListDummy = [
   },
   {
     id: 6,
-    title: 'Banana Smothie Pop',
+    title: 'Banana Smothie Popa',
     image: '/images/temp/list-3.svg',
   },
   {
