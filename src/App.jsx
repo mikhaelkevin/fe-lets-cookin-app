@@ -10,6 +10,7 @@ import Register from './pages/Auth/Register';
 import Content from './pages/Outlet/Content';
 import LandingPage from './pages/LandingPage';
 import DetailRecipe from './pages/Recipe/DetailRecipe';
+import NewRecipe from './pages/Recipe/NewRecipe';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route element={<Content />}>
           <Route path="/" element={<LandingPage />} />
           <Route path="/detail" element={<DetailRecipe />} />
+          <Route path="/new" element={<NewRecipe />} />
         </Route>
       </Routes>
     </BrowserRouter>
