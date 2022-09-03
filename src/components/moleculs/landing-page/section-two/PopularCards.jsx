@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import { recipeDummy } from '../../../../utils/data';
 import style from '../../../../styles/module-css/LandingPage.module.css';

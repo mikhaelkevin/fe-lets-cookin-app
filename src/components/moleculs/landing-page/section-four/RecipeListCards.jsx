@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import { recipeListDummy } from '../../../../utils/data';
 import RecipeListCard from '../../../atomics/landing-page/RecipeListCard';
