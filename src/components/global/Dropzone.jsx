@@ -11,17 +11,17 @@ import {
 function Dropzone({ data }) {
   const [files, setFiles] = useState([]);
 
-  useEffect(() => files.forEach((file) => URL.revokeObjectURL(file.preview)), []);
-  useEffect(() => data({ image: files }), [files]);
-
   const { getRootProps, getInputProps } = useDropzone({
     accept: {
       'image/*': ['.jpg', '.jpeg', '.png', '.svg'],
     },
     onDrop: (acceptedFiles) => {
-      setFiles(acceptedFiles.map((file) => Object.assign(file, {
+      const fileObject = acceptedFiles.map((file) => Object.assign(file, {
         preview: URL.createObjectURL(file),
-      })));
+      }));
+
+      setFiles(fileObject);
+      data({ image: fileObject });
     },
   });
 
@@ -38,6 +38,9 @@ function Dropzone({ data }) {
       </div>
     </div>
   ));
+
+  useEffect(() => files.forEach((file) => URL.revokeObjectURL(file.preview)), []);
+
   return (
     <div className={style.dropzone}>
       {files?.length ? (
