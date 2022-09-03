@@ -5,7 +5,7 @@ function Ingredients({ data: { ingredients } }) {
   return (
     <>
       <h1>Ingredients</h1>
-      {ingredients.map((item, index) => {
+      {ingredients?.map((item, index) => {
         const ingredientKey = index + 1;
         return <p key={ingredientKey}>{`- ${item}`}</p>;
       })}
