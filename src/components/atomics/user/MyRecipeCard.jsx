@@ -1,11 +1,13 @@
 import React from 'react';
 import { RiDeleteBin2Line, RiEdit2Line } from 'react-icons/ri';
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 import style from '../../../styles/module-css/Profile.module.css';
 import Image from '../../global/Image';
 import brokenImage from '../../../assets/images/broken-image.png';
 
-function MyRecipeCard({ data: { title, image } }) {
+function MyRecipeCard({ data: { id, title, image } }) {
+  const navigate = useNavigate();
   return (
     <div className="col-lg-3 col-md-6 col-12 mb-4">
       <div className={style.featureItemCard}>
@@ -17,7 +19,7 @@ function MyRecipeCard({ data: { title, image } }) {
             <div className="col-4 d-flex justify-content-end">
               <div className="row">
                 <div className="col-6">
-                  <button type="button" className="btn btn btn-warning">
+                  <button type="button" className="btn btn btn-warning" onClick={() => navigate(`/edit-recipe/${id}`)}>
                     <RiEdit2Line />
                   </button>
                 </div>
@@ -38,6 +40,7 @@ function MyRecipeCard({ data: { title, image } }) {
 
 MyRecipeCard.propTypes = {
   data: PropTypes.shape({
+    id: PropTypes.number,
     title: PropTypes.string,
     image: PropTypes.string,
   }),
@@ -45,6 +48,7 @@ MyRecipeCard.propTypes = {
 
 MyRecipeCard.defaultProps = {
   data: {
+    id: 1,
     title: 'Untitled',
     image: brokenImage,
   },

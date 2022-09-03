@@ -11,6 +11,7 @@ import Content from './pages/Outlet/Content';
 import LandingPage from './pages/LandingPage';
 import DetailRecipe from './pages/Recipe/DetailRecipe';
 import NewRecipe from './pages/Recipe/NewRecipe';
+import EditRecipe from './pages/Recipe/EditRecipe';
 
 import Profile from './pages/User/Profile';
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/detail" element={<DetailRecipe />} />
           <Route path="/new" element={<NewRecipe />} />
+          <Route path="/edit-recipe/:recipeId" element={<EditRecipe />} />
           <Route path="/profile" element={<Profile />} />
         </Route>
       </Routes>

@@ -7,7 +7,10 @@ function MyRecipeCards({ data }) {
   return (
     <div className="row">
       {data?.map((item) => (
-        <MyRecipeCard data={{ title: item?.title, image: item?.image }} key={item?.id} />
+        <MyRecipeCard
+          data={{ id: item?.id, title: item?.title, image: item?.image }}
+          key={item?.id}
+        />
       ))}
     </div>
   );
