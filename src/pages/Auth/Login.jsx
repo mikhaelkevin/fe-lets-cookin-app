@@ -6,7 +6,7 @@ import LoginPanel from '../../components/organism/auth/LoginPanel';
 
 function Login() {
   useEffect(() => {
-    document.title = 'Login';
+    document.title = `${process.env.REACT_APP_NAME} | Login`;
   });
 
   return (

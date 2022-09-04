@@ -24,7 +24,7 @@ function EditRecipe() {
   };
 
   useEffect(() => {
-    document.title = 'Edit Recipe';
+    document.title = `${process.env.REACT_APP_NAME} | Edit Recipe`;
     dataFetcher();
   }, []);
 

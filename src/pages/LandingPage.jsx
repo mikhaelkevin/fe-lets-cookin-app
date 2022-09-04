@@ -7,7 +7,7 @@ import SectionFour from '../components/organism/landing-page/SectionFour';
 
 function LandingPage() {
   useEffect(() => {
-    document.title = 'Home';
+    document.title = `${process.env.REACT_APP_NAME} | Home`;
   });
 
   return (

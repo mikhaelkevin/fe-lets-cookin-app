@@ -6,7 +6,7 @@ import RegisterPanel from '../../components/organism/auth/RegisterPanel';
 
 function Register() {
   useEffect(() => {
-    document.title = 'Register';
+    document.title = `${process.env.REACT_APP_NAME} | Register`;
   });
 
   return (

@@ -11,7 +11,7 @@ function NewRecipe() {
   const [ingredients, setIngredients] = useState('');
   const [videos, setVideos] = useState('');
 
-  useEffect(() => { document.title = 'Add Recipe'; }, []);
+  useEffect(() => { document.title = `${process.env.REACT_APP_NAME} | Add Recipe`; }, []);
 
   const dataSend = (event) => {
     event?.preventDefault();

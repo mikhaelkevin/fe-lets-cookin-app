@@ -17,7 +17,7 @@ function DetailRecipe() {
   };
 
   useEffect((/* recipeId */) => {
-    document.title = 'Detail Resep';
+    document.title = `${process.env.REACT_APP_NAME} | Detail Recipe`;
     dataFetcher();
   }, []);
 
