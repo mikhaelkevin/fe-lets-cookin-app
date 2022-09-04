@@ -20,7 +20,9 @@ function NewRecipe() {
   return (
     <div className={style.container}>
       <form onSubmit={(e) => dataSend(e)}>
-        <Dropzone data={(item) => setImage(item?.image)} />
+        <div className={style.dropzone}>
+          <Dropzone data={(item) => setImage(item?.image)} />
+        </div>
         <InputBox data={{ name: 'Title', type: 'text', placeholder: 'Title' }} event={(item) => setTitle(item)} />
         <textarea className="mb-0 mb-md-2 mb-xl-3" name="ingredients" id="ingredients" placeholder="Ingredients" onChange={(e) => setIngredients(e?.target?.value)} />
         <InputBox data={{ name: 'Videos', type: 'text', placeholder: 'Videos' }} event={(item) => setVideos(item)} />

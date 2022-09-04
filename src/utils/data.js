@@ -102,6 +102,14 @@ const myRecipeDummy = [...recipeListDummy];
 const savedRecipeDummy = [recipeListDummy?.[2], recipeListDummy?.[3]];
 const likedRecipeDummy = [recipeListDummy?.[3], recipeListDummy?.[4]];
 
+const userDummy = {
+  image: anya,
+  name: 'Anya Geraldine',
+  email: 'anyageraldine@gmail.com',
+  password: '1234',
+  phonenumber: '081297915965',
+};
+
 export {
   recipeDummy,
   newRecipeDummy,
@@ -111,4 +119,5 @@ export {
   myRecipeDummy,
   savedRecipeDummy,
   likedRecipeDummy,
+  userDummy,
 };
