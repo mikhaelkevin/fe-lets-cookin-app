@@ -35,7 +35,9 @@ function EditRecipe() {
   return (
     <div className={style.container}>
       <form onSubmit={(e) => dataSend(e)}>
-        <Dropzone data={(item) => setImage(item?.image)} />
+        <div className={style.dropzone}>
+          <Dropzone data={(item) => setImage(item?.image)} />
+        </div>
         <InputBox
           data={{
             name: 'Title', type: 'text', placeholder: 'Title', value: title,

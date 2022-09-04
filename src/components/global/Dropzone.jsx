@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { useDropzone } from 'react-dropzone';
 import PropTypes from 'prop-types';
 
-import style from '../../styles/module-css/NewRecipe.module.css';
 import {
   thumbsContainer, thumb, thumbInner, img,
 } from '../../styles/dropzone/imagePreview';
@@ -42,7 +41,8 @@ function Dropzone({ data }) {
   useEffect(() => files.forEach((file) => URL.revokeObjectURL(file.preview)), []);
 
   return (
-    <div className={style.dropzone}>
+    // eslint-disable-next-line react/jsx-no-useless-fragment
+    <>
       {files?.length ? (
         <aside style={thumbsContainer}>
           {thumbs}
@@ -51,11 +51,11 @@ function Dropzone({ data }) {
         <div {...getRootProps({ className: 'dropzone' })}>
           <input {...getInputProps()} />
           <span className="text-center">
-            Drag and drop, or click to select files and set your recipe picture.
+            Drag and drop, or click here to select files and set your picture.
           </span>
         </div>
       )}
-    </div>
+    </>
   );
 }
 
