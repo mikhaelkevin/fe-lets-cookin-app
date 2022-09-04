@@ -25,7 +25,7 @@ function Profile() {
       <div className={style.userProfile}>
         <Image data={{ image: user?.image, title: 'user-profile-picture' }} />
         <h2>{user?.name}</h2>
-        <ProfileMenus />
+        <ProfileMenus data={{ ...user }} />
       </div>
       <div className={style.userFeature}>
         <RecipeFeature />
