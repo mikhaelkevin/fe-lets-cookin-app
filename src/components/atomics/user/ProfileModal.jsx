@@ -18,8 +18,8 @@ function ProfileModal(props) {
         {children}
       </Modal.Body>
       <Modal.Footer className="justify-content-center" style={{ backgroundColor: '#FFF5EC' }}>
-        <Button variant="warning">Save change</Button>
         <Button onClick={closeModal} variant="danger">No</Button>
+        <Button variant="warning">Save change</Button>
       </Modal.Footer>
     </Modal>
   );

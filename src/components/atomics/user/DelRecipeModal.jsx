@@ -9,8 +9,8 @@ function DelRecipeModal({ show, closeModal }) {
         <h4>Are you sure want to delete this recipe?</h4>
       </Modal.Body>
       <Modal.Footer className="justify-content-center">
-        <Button variant="warning">Yes</Button>
         <Button onClick={closeModal} variant="danger">No</Button>
+        <Button variant="warning">Yes</Button>
       </Modal.Footer>
     </Modal>
   );
