@@ -118,7 +118,7 @@ Create .env file in your root project folder.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Screenshoots
+## Screenshots
 
 <p align="center" display=flex>
    
