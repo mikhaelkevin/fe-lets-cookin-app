@@ -149,11 +149,19 @@ Create .env file in your root project folder.
   </tr>
   <tr>
     <td style='text-align: center; background-color: #6661; font-weight: 600'>Profile</td>
-    <td style='text-align: center; background-color: #6661; font-weight: 600'>Untitled</td>
+    <td style='text-align: center; background-color: #6661; font-weight: 600'>Edit Profile</td>
   </tr>
   <tr>
     <td><image src="https://res.cloudinary.com/nocturncloud/image/upload/v1662180705/lets-cookin-app/README/Profile_h94qhh.png" alt="profile" width=100%></td>
-    <td></td>
+    <td><image src="https://res.cloudinary.com/nocturncloud/image/upload/v1662289239/lets-cookin-app/README/Edit_Profile_l7bd4y.png" alt="profile" width=100%></td>
+  </tr>
+  <tr>
+    <td style='text-align: center; background-color: #6661; font-weight: 600'>Change password</td>
+    <td style='text-align: center; background-color: #6661; font-weight: 600'>Delete recipe</td>
+  </tr>
+  <tr>
+    <td><image src="https://res.cloudinary.com/nocturncloud/image/upload/v1662289349/lets-cookin-app/README/Change_Password_edcwss.png" alt="profile" width=100%></td>
+    <td><image src="https://res.cloudinary.com/nocturncloud/image/upload/v1662289487/lets-cookin-app/README/Delete_Recipe_y5oyj2.png" alt="profile" width=100%></td>
   </tr>
 </table>
       
